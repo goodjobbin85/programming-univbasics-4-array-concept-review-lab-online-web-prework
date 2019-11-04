@@ -22,4 +22,11 @@ end
 
 def find_min_value(array)
   # Add your solution here
+  min_num = 100
+  array.each do |value|
+    if value < min_num
+      min_num = value
+    end
+  end
+  return min_num
 end
